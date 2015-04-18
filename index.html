@@ -1,124 +1,195 @@
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!doctype html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Mali">
-
-  
-  <meta name="description" content=" Blog Archives Recent Posts ">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://madaye.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
+<meta charset="utf-8">
+<meta name="description" content="般若波罗密多心经" />
+<title>般若波罗密心经</title>
+<script type="text/jscript">
+function changeColor(color,font){
+    document.body.style.background = color;
+	document.body.style.color = font;
+}
+</script>
+<script type="text/jscript">
+var flag=true; 
+function displayDiv() 
+{ 
+    var div=document.getElementById("music_box"); 
+    if(flag) 
+        div.style.display="block"; 
+    else 
+        div.style.display="none"; 
+    flag=!flag; 
+}
+</script>
+<style type="text/css">
+body {
+	margin: 0;
+	background-color: #FFFFFF;
+	bottom: 8px;
+}
+div {
+	float: left;
+}
+.div_1 {
+	width: 100%;
+	height: 100%;
+	margin-top: 70px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.h {
+	text-align: center;
+	line-height: 40px;
+}
+.p_content {
+	font-family: "仿宋";
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 4px;
+	line-height: 30px;
+}
+#inout {
+	animation-name: text_in;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-name: text_in;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes text_in {
+from {
+opacity:0;
+}
+ to {
+opacity:1;
+}
+}
+@-webkit-keyframes text_in {
+from {
+opacity:0;
+}
+to {
+opacity:1;
+}
+}
+.author {
+	font-family: "楷体";
+	font-size: 15px;
+	padding-left: 98px;
+}
+.bgcolor {
+	position: fixed;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
+	background-color: #000000;
+	border: 2px solid #E1E1E1;
+}
+.bgcolor_2 {
+	cursor: pointer;
+	position: fixed;
+	width: 15px;
+	height: 15px;
+	margin-left: 50px;
+	margin-top: 20px;
+	background-color: #FBFBFB;
+	border: 2px solid #E1E1E1;
+}
+#btn1 {
+	cursor: pointer;
+	position: fixed;
+	width: 15px;
+	height: 15px;
+	margin-left: 80px;
+	margin-top: 20px;
+	background-color: #C00000;
+	border: 2px solid #E1E1E1;
+}
+hr {
+	height: 1px;
+	border: none;
+	border-top: 1px dashed #000000;
+}
+#music_box {
+	display: none;
+	position: fixed;
+	right: 1px;
+	left: auto;
+	bottom: 2px;
+	top: auto;
+}
+</style>
 </head>
 
-<body   >
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:madaye.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-    <li><a href="/">
-        <span class="blue_light">
-            My Octopress Blog
-        </span>
-       
-           <span class="blue_dark">
-             A Blog For Study
-           </span>
-       
-    </a></li>
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+<body>
+<div class="bgcolor" title="黑色背景" onclick="changeColor('#000000','#FBFBFB');"></div>
+<div class="bgcolor_2" title="灰色背景" onclick="changeColor('#FBFBFB','#000000');"></div>
+<div  id="btn1" title="音乐" onclick="displayDiv()"></div>
+<div  id="inout" class="div_1">
+  <h2 class="h">般若波罗多密心经</h2>
+  <p class="p_content"><span class="author">唐 玄奘译</span><br/>
+    <span> 观自在菩萨<br/>
+    行深般若波罗蜜多时<br/>
+    照见五蕴皆空<br/>
+    度一切苦厄<br/>
+    舍利子<br/>
+    色不异空<br/>
+    空不异色<br/>
+    色即是空<br/>
+    空即是色<br/>
+    受想行识<br/>
+    亦复如是<br/>
+    舍利子<br/>
+    是诸法空相<br/>
+    不生不灭<br/>
+    不垢不净<br/>
+    不增不减<br/>
+    是故空中无色<br/>
+    无受想行识<br/>
+    无眼耳鼻舌身意<br/>
+    无色声香味触法<br/>
+    无眼界<br/>
+    乃至无意识界<br/>
+    无无明亦无无明尽<br/>
+    乃至无老死<br/>
+    亦无老死尽<br/>
+    无苦集灭道<br/>
+    无智亦无得<br/>
+    以无所得故<br/>
+    菩提萨埵<br/>
+    依般若波罗蜜多故<br/>
+    心无罣碍<br/>
+    无罣碍故<br/>
+    无有恐怖<br/>
+    远离颠倒梦想<br/>
+    究竟涅磐<br/>
+    三世诸佛<br/>
+    依般若波罗蜜多故<br/>
+    得阿耨多罗三藐三菩提<br/>
+    故知般若波罗蜜多<br/>
+    是大神咒<br/>
+    是大明咒<br/>
+    是无上咒<br/>
+    是无等等咒<br/>
+    能除一切苦<br/>
+    真实不虚<br/>
+    故说般若波罗蜜多咒<br/>
+    即说咒曰<br/>
+    揭谛揭谛<br/>
+    波罗揭谛<br/>
+    波罗僧揭谛<br/>
+    菩提萨婆诃<br/>
+    </span></p>
 </div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-  </ul>
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Mali -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
+<div id="music_box">
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=298863&auto=0&height=66"></iframe>
+</div>
 </body>
 </html>
