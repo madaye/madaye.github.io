@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://madaye.github.io/sitemap.xml 
