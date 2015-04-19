@@ -26,6 +26,7 @@ function displayDiv()
 body {
 	margin: 0;
 	background-color: #FFFFFF;
+	bottom: 8px;
 }
 div {
 	float: left;
@@ -36,7 +37,6 @@ div {
 	margin-top: 70px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom:8px;
 }
 .h {
 	text-align: center;
@@ -85,26 +85,44 @@ opacity:1;
 .bgcolor {
 	position: fixed;
 	cursor: pointer;
+	font-size:12px;
+	color:#000000;
+	text-align:center;
 	width: 15px;
 	height: 15px;
 	margin-left: 20px;
 	margin-top: 20px;
 	background-color: #000000;
+	background-attachment:fixed;
 	border: 2px solid #E1E1E1;
 }
+.bgcolor:hover{
+	background-color:#FFFFFF;
+	}
 .bgcolor_2 {
 	cursor: pointer;
 	position: fixed;
+	font-size:12px;
+	text-align:center;
+	color:#FBFBFB;
 	width: 15px;
 	height: 15px;
 	margin-left: 50px;
 	margin-top: 20px;
 	background-color: #FBFBFB;
 	border: 2px solid #E1E1E1;
+
 }
+.bgcolor_2:hover{
+	background-color:#000000;}
+
 #btn1 {
 	cursor: pointer;
 	position: fixed;
+	font-size:12px;
+	
+	color: #C00000;
+	text-align:center;
 	width: 15px;
 	height: 15px;
 	margin-left: 80px;
@@ -125,13 +143,18 @@ hr {
 	bottom: 2px;
 	top: auto;
 }
+#btn1:hover { 
+	
+	background-color: #FFFFFF;
+	
+}
 </style>
 </head>
 
 <body>
-<div class="bgcolor" title="黑色背景" onclick="changeColor('#000000','#FBFBFB');"></div>
-<div class="bgcolor_2" title="灰色背景" onclick="changeColor('#FBFBFB','#000000');"></div>
-<div  id="btn1" title="音乐" onclick="displayDiv()"></div>
+<div class="bgcolor" title="黑色背景" onclick="changeColor('#000000','#FBFBFB');">黑</div>
+<div class="bgcolor_2" title="灰色背景" onclick="changeColor('#FBFBFB','#000000');">灰</div>
+<div  id="btn1" title="音乐" onclick="displayDiv()">音</div>
 <div  id="inout" class="div_1">
   <h2 class="h">般若波罗多密心经</h2>
   <p class="p_content"><span class="author">唐 玄奘译</span><br/>
